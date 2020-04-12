@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	<style>
+		body{
+			overflow:hidden;
+			margin:0;
+			height:600px;
+			border:1px solid;
+		}
+		.black{
+			position:absolute;
+			width:80px;
+			height:80px;
+			top:-30px;
+			left:-30px;
+			border-radius:50%;
+			background-color:black;
+			cursor:pointer;
+			transition-duration: 0.8s;
+			transition-timing-function: linear;
+		}
+	</style>
+	</head>
+	<body>
+		<div class='black'></div>
+		<script>
+			var Div = document.querySelector(".black");
+			Div.onclick = function(){
+				Div.style.transform= "scale(38)";
+				Div.style.cursor = "auto";
+			}
+		</script>
+	</body>
+</html>
